@@ -8,11 +8,7 @@ class Game
     @player2 = Player.new('Player 2')
     @question = Question.new()
     @current_player = @player1
-    user_input = nil;
   end
-
-  attr_reader :question
-  attr_reader :winner
 
   def start_game ()
     while @winner == nil
@@ -32,6 +28,7 @@ class Game
           break
         end
       end
+      puts "P1: #{@player1.score}/3 vs P2: #{@player2.score}/3"
       puts "---- NEW TURN ----"
       switch_player()
     end
