@@ -2,8 +2,6 @@ class Question
   def initialize
     @question = ""
     @answer = nil
-    num1 = nil
-    num2 = nil
   end
 
   attr_accessor :question
